@@ -19,3 +19,6 @@ public class Demo{
         sc.close();
     }
 }
+//output
+// Enter Data:/
+// It is Special Character

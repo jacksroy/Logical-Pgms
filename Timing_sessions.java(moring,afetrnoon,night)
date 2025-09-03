@@ -1,0 +1,24 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        System.out.print("Enter you Number:");
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+        if(num>=5 && num<=11){
+            System.out.println("Morning");}
+            else if(num>=12 && num<=16){
+                System.out.println("Afternoon");
+                
+            }
+            else if(num>17 && num<=20){
+                System.out.println("Evening");
+            }
+        else{
+            System.out.println("Night");
+        }
+        sc.close();
+    }
+}
+//output
+// Enter you Number:2
+// Night

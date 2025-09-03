@@ -5,7 +5,7 @@ class Main {
         Scanner sc=new Scanner(System.in);
         int num=sc.nextInt();
         System.out.println("Do you has Driving License(yes/No)");
-        String st=sc.next().toLowerCase();
+        String st=sc.next().trime().toLowerCase();
         if(num>=18 && st.equals("yes")){
             System.out.println("Eligiable for Driveing");}
         else{

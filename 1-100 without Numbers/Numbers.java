@@ -13,6 +13,12 @@ public class Numbers {
         //approach 2:
         for(int i='B'/'B';i<='d';i++){  //here the ASCII value of 'd' is 100   so it is based on ascii values
             System.out.println(i);
-        }
     }
+    System.out.println("---------------------------------------------");
+        //Approach 3:
+        for(int i=s.length()/s.length();i<=(s.length()*s.length());i++){ // using length of string
+            System.out.println(i);
+        }
+    
+}
 }

@@ -6,6 +6,7 @@ public class App_2 {
 
         //Approach 2 :using Java Streams
         IntStream.range(1,201).forEach(e->System.out.println(e));
+        //Approach 3 :using Java Streams
         IntStream.rangeClosed(1, 18).forEach(System.out::println);
     }
     public static void printNumbers(int num){

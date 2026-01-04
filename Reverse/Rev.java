@@ -7,6 +7,10 @@ public class Rev {
         int num = sc.nextInt();
         int rev =0;
 
+        if(num <0){
+            System.out.println(0);
+        }
+
         //Approach 1: Using while loop
         while(num != 0){
             rev=rev*10 +num%10;
@@ -17,6 +21,9 @@ public class Rev {
         //Approach 2: Using StringBuffer
         System.out.println("Enter a number to reverse using String Buffer: ");
         int num1 = sc.nextInt(); 
+         if(num1 <0){
+            System.out.println(0);
+        }
         StringBuffer sb =new StringBuffer(String.valueOf(num1)); //String.valueOf() method converts int to String
         StringBuffer rev1 =sb.reverse();//StringBuffer class has a built-in method reverse() to reverse the string we create the StringBuffer object 
         System.out.println("Reverse using String Buffer :" +rev1);
@@ -24,6 +31,9 @@ public class Rev {
         //Approach 3: Using StringBuilder
         System.out.println("Enter a number to reverse using String Builder: ");
         int num2 = sc.nextInt();
+         if(num2 <0){
+            System.out.println(0);
+        }
         StringBuilder sbl= new StringBuilder();
         sbl.append(num2); //append() method is used to add the int value to StringBuilder object
         StringBuilder rev2 = sbl.reverse(); //StringBuilder class also has a built-in method reverse() to reverse the string

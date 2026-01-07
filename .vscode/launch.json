@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PalString",
+            "request": "launch",
+            "mainClass": "PalString",
+            "projectName": "Logic_f38407eb"
+        },
+        {
+            "type": "java",
             "name": "Attach",
             "request": "attach",
             "hostName": "localhost",

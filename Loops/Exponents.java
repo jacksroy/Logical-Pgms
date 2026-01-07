@@ -8,7 +8,7 @@ public class Exponents {
         int num=sc.nextInt();
         int power =sc.nextInt();
         int result =1;
-        for(int i=0 ;i<power ;i++){
+        for(int i=1 ;i<=power ;i++){
             result *=num;
         }
         System.out.println(result);

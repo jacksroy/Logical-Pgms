@@ -2,29 +2,30 @@ import java.util.Scanner;
 
 public class PerfectSquare {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int num = sc.nextInt();
+        try (Scanner sc = new Scanner(System.in)) {
+            int num = sc.nextInt();
 
-        if (num < 0) {
-            System.out.println("Not a perfect square");
-            return;
-        }
-
-        boolean isPerfectSquare = false;
-
-        for (int i = 0; i * i <= num; i++) {
-            if (i * i == num) {
-                isPerfectSquare = true;
-                break;
+            if (num < 0) {
+                System.out.println("Not a perfect square");
+                return;
             }
-        }
 
-        if (isPerfectSquare) {
-            System.out.println("Perfect square");
-        } else {
-            System.out.println("Not a perfect square");
-        }
+            boolean isPerfectSquare = false;
 
-        sc.close();
+            for (int i = 0; i * i <= num; i++) {
+                if (i * i == num) {
+                    isPerfectSquare = true;
+                    break;
+                }
+            }
+
+            if (isPerfectSquare) {
+                System.out.println("Perfect square");
+            } else {
+                System.out.println("Not a perfect square");
+            }
+
+            sc.close();
+        }
     }
 }

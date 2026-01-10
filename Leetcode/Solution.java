@@ -7,6 +7,7 @@ public class Solution {
         for(int i=0;i<num.length;i++){
             for(int j=i+1;j<num.length;j++){
                 if(num[i] +num[j] ==target ){
+                    System.out.println( i +"," +j);
                     return new int [] {i,j};
                     
                 }
@@ -28,13 +29,13 @@ public class Solution {
                 num[i] =sc.nextInt();
             }
             int target= sc.nextInt();
-            int[] res =twoSum(num,target);
-            if(res.length ==2){
-                System.out.println(res[0] +"," +res[1]);
-            }
-            else {
-                System.out.println("No two sum solution found.");
-            }
+            twoSum(num,target);
+            // if(res.length ==2){
+            //     System.out.println(res[0] +"," +res[1]);
+            // }
+            // else {
+            //     System.out.println("No two sum solution found.");
+            // }
         }
 
     }

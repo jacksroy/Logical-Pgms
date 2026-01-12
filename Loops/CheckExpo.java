@@ -2,9 +2,10 @@
 import java.util.Scanner;
 class CheckExpo {
     public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in);
-        int num= sc.nextInt();
-        sc.close();
+        int num;
+        try (Scanner sc = new Scanner(System.in)) {
+            num = sc.nextInt();
+        }
         boolean isExpo = false;
         for(int i=0; i<=30; i++){
             if((1<<i) == num){

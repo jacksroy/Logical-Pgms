@@ -1,3 +1,5 @@
+
+
 public class Min {
     public static void main(String[] args) {
 
@@ -14,5 +16,6 @@ public class Min {
 
         System.out.println(Math.min(Double.MIN_VALUE, 0.0D));// Double.Min_value is positive > 0.0D
         System.out.println(Math.min(Double.MIN_VALUE, Double.NEGATIVE_INFINITY)); // Double.MIN_VALUE > the -Infinity
+        System.out.println(Math.min(Double.MIN_VALUE, Double.POSITIVE_INFINITY));
     }
 }
